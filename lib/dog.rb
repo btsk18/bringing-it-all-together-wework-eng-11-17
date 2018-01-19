@@ -72,4 +72,7 @@ class Dog
     dog = DB[:conn].execute("SELECT * FROM dogs WHERE name = ?", name)
     new_from_db(dog[0])
   end
+
+  def update
+  end
 end
