@@ -35,6 +35,5 @@ class Dog
     SQL
     DB[:conn].execute(sql, @name, @breed)
     @id = DB[:conn].execute("SELECT last_insert_rowid() FROM dogs")
-    
   end
 end
